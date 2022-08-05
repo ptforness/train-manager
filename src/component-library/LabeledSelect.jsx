@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Label = styled.label`
   color: #202020;
@@ -15,17 +15,11 @@ const StyledSpan = styled.span`
   width: 80%;
 `;
 
-export const LabeledSelect = ({
-  id,
-  options,
-  defaultValue,
-  children,
-  onChange,
-}) => (
+export const LabeledSelect = ({ id, options, defaultValue, children, onChange }) => (
   <StyledSpan>
     <Label htmlFor={id}>{children}</Label>
     <Select id={id} name={id} defaultValue={defaultValue} onChange={onChange}>
-      {options.map((option) => (
+      {options.map(option => (
         <option key={option} value={option}>
           {option}
         </option>

@@ -13,7 +13,7 @@ const StyledSection = styled.section`
 
 const StyledUl = styled.ul`
   padding: 0;
-  
+
   // List gap
   li:not(:first-child) {
     margin-top: 20px;

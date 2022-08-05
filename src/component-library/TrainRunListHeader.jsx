@@ -33,9 +33,9 @@ export const TrainRunListHeader = ({
   handleCreate,
 }) => (
   <StyledSection>
-      <Button onClick={handlePrevious}>Prev</Button>
-      <Button onClick={handleNext}>Next</Button>
-      <Button onClick={handleCreate}>New Run</Button>
+    <Button onClick={handlePrevious}>Prev</Button>
+    <Button onClick={handleNext}>Next</Button>
+    <Button onClick={handleCreate}>New Run</Button>
     <LabeledSelect
       id="sortField"
       options={sortFields}
@@ -49,7 +49,9 @@ export const TrainRunListHeader = ({
       options={['ASC', 'DESC']}
       defaultValue={sortDirection}
       onChange={e => setSortDirection(e.target.value)}
-    > Direction
+    >
+      {' '}
+      Direction
     </LabeledSelect>
     <LabeledSelect id="limit" defaultValue={limit} options={[5, 10, 25, 100]} onChange={e => setLimit(e.target.value)}>
       Limit
